@@ -4,8 +4,6 @@
 
 > This project is a SPA with a calculator a homepage and a page for Math quotes.
 
-![screenshot](./app_screenshot.png)
-
 This project's goal is to teach how to create an App with React and use the concept of Single Page Apps.
 
 ## Built With
