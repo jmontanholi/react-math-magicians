@@ -104,14 +104,17 @@
 
 .buttonAc {
   grid-area: ac;
+  background-color: rgb(243, 243, 243);
 }
 
 .plusminus {
   grid-area: plusminus;
+  background-color: rgb(243, 243, 243);
 }
 
 .percentage {
   grid-area: percentage;
+  background-color: rgb(243, 243, 243);
 }
 
 .plus {
@@ -132,6 +135,7 @@
 
 .dot {
   grid-area: dot;
+  background-color: rgb(243, 243, 243);
 }
 
 .equal {
