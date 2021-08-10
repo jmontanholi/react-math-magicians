@@ -1,0 +1,142 @@
+.calculator {
+  width: 500px;
+  display: grid;
+  box-shadow: 15px 15px 15px 5px rgb(65, 65, 65);
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(6, 80px);
+  grid-template-areas:
+
+    "result result result result"
+    "ac plusminus percentage divide"
+    "seven eight nine multiply"
+    "four five six minus"
+    "three two one plus"
+    "zero zero dot equal";
+}
+
+.resultShow {
+  grid-area: result;
+  background-color: rgba(128, 128, 128, 0.753);
+  color: rgb(255, 255, 255);
+  text-align: right;
+  font-size: 40px;
+}
+
+.resultNumber {
+  margin: 15px;
+}
+
+.numbers {
+  border: 1px solid rgb(199, 199, 199);
+  background-color: rgb(243, 243, 243);
+  font-size: 20px;
+  transition: all 0.1s;
+}
+
+.numbers:hover {
+  background-color: rgb(231, 231, 231);
+  cursor: pointer;
+}
+
+.numbers:active {
+  opacity: 0.8;
+  box-shadow: inset 0 0 5px black;
+}
+
+.symbols {
+  border: 1px solid rgb(199, 199, 199);
+  background-color: rgb(255, 136, 0);
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.1s;
+}
+
+.symbols:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
+.symbols:active {
+  border: none;
+  box-shadow: inset 0 0 10px black;
+}
+
+.number0 {
+  grid-area: zero;
+}
+
+.number1 {
+  grid-area: one;
+}
+
+.number2 {
+  grid-area: two;
+}
+
+.number3 {
+  grid-area: three;
+}
+
+.number4 {
+  grid-area: four;
+}
+
+.number5 {
+  grid-area: five;
+}
+
+.number6 {
+  grid-area: six;
+}
+
+.number7 {
+  grid-area: seven;
+}
+
+.number8 {
+  grid-area: eight;
+}
+
+.number9 {
+  grid-area: nine;
+}
+
+.buttonAc {
+  grid-area: ac;
+  background-color: rgb(243, 243, 243);
+}
+
+.plusminus {
+  grid-area: plusminus;
+  background-color: rgb(243, 243, 243);
+}
+
+.percentage {
+  grid-area: percentage;
+  background-color: rgb(243, 243, 243);
+}
+
+.plus {
+  grid-area: plus;
+}
+
+.minus {
+  grid-area: minus;
+}
+
+.divide {
+  grid-area: divide;
+}
+
+.multiply {
+  grid-area: multiply;
+}
+
+.dot {
+  grid-area: dot;
+  background-color: rgb(243, 243, 243);
+}
+
+.equal {
+  grid-area: equal;
+}
