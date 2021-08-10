@@ -2,11 +2,19 @@
 import React from 'react';
 
 class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      result: 0,
+    };
+  }
+
   render() {
+    const { result } = this.state;
     return (
       <div className="calculator">
         <div className="resultShow">
-          <p className="resultNumber">0</p>
+          <p className="resultNumber">{result}</p>
         </div>
         <button className="number0 numbers" type="button">0</button>
         <button className="number1 numbers" type="button">1</button>
