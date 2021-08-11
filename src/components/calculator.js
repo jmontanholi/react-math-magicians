@@ -32,7 +32,9 @@ class Calculator extends React.Component {
         <div className="resultShow">
           <p className="resultNumber">
             { total }
+            { ' ' }
             { operation }
+            { ' ' }
             { next }
           </p>
         </div>
