@@ -18,9 +18,7 @@ class Calculator extends React.Component {
       this.setState({ total: newState.total });
     }
 
-    // if (newState.next !== null) {
     this.setState({ next: newState.next });
-    // }
 
     if (newState.operation != null) {
       this.setState({ operation: newState.operation });
@@ -28,12 +26,14 @@ class Calculator extends React.Component {
   }
 
   render() {
-    const { total, next } = this.state;
+    const { total, next, operation } = this.state;
     return (
       <div className="calculator">
         <div className="resultShow">
           <p className="resultNumber">
-            { next == null ? total : next}
+            { total }
+            { operation }
+            { next }
           </p>
         </div>
         <button className="number0 numbers" type="button" onClick={() => { this.handleStateChange(calculate(this.state, '0')); }}>0</button>
