@@ -1,0 +1,29 @@
+.div {
+  width: 50%;
+  margin: 15% auto;
+}
+
+.quote {
+  font-size: 40px;
+}
+
+.button {
+  background-color: lightgray;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 18px;
+  width: 100px;
+  height: 50px;
+  box-shadow: 2px 2px 5px black;
+}
+
+.button:hover {
+  background-color: rgb(156, 156, 156);
+  cursor: pointer;
+  box-shadow: 1px 1px 1px black;
+}
+
+.button:active {
+  background-color: rgb(97, 97, 97);
+  box-shadow: inset 1px 1px 5px black;
+}

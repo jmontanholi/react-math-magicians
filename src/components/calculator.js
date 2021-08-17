@@ -1,6 +1,7 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
+import style from './CalculatorGrid.module.css';
 
 const Calculator = () => {
   const [total, setTotal] = useState('');
@@ -25,9 +26,9 @@ const Calculator = () => {
   };
 
   return (
-    <div className="calculator">
-      <div className="resultShow">
-        <p className="resultNumber">
+    <div className={style.calculator}>
+      <div className={style.resultShow}>
+        <p className={style.resultNumber}>
           { total }
           { ' ' }
           { operation }
@@ -35,25 +36,25 @@ const Calculator = () => {
           { next }
         </p>
       </div>
-      <button className="number0 numbers" type="button" onClick={() => { handleStateChange(calculate(object, '0')); }}>0</button>
-      <button className="number1 numbers" type="button" onClick={() => { handleStateChange(calculate(object, '1')); }}>1</button>
-      <button className="number2 numbers" type="button" onClick={() => { handleStateChange(calculate(object, '2')); }}>2</button>
-      <button className="number3 numbers" type="button" onClick={() => { handleStateChange(calculate(object, '3')); }}>3</button>
-      <button className="number4 numbers" type="button" onClick={() => { handleStateChange(calculate(object, '4')); }}>4</button>
-      <button className="number5 numbers" type="button" onClick={() => { handleStateChange(calculate(object, '5')); }}>5</button>
-      <button className="number6 numbers" type="button" onClick={() => { handleStateChange(calculate(object, '6')); }}>6</button>
-      <button className="number7 numbers" type="button" onClick={() => { handleStateChange(calculate(object, '7')); }}>7</button>
-      <button className="number8 numbers" type="button" onClick={() => { handleStateChange(calculate(object, '8')); }}>8</button>
-      <button className="number9 numbers" type="button" onClick={() => { handleStateChange(calculate(object, '9')); }}>9</button>
-      <button className="buttonAc symbols" type="button" onClick={() => { handleStateChange(calculate(object, 'AC')); }}>AC</button>
-      <button className="plusminus symbols" type="button" onClick={() => { handleStateChange(calculate(object, '+/-')); }}>+/-</button>
-      <button className="percentage symbols" type="button" onClick={() => { handleStateChange(calculate(object, '%')); }}>%</button>
-      <button className="plus symbols" type="button" onClick={() => { handleStateChange(calculate(object, '+')); }}>+</button>
-      <button className="minus symbols" type="button" onClick={() => { handleStateChange(calculate(object, '-')); }}>-</button>
-      <button className="divide symbols" type="button" onClick={() => { handleStateChange(calculate(object, '÷')); }}>÷</button>
-      <button className="multiply symbols" type="button" onClick={() => { handleStateChange(calculate(object, 'x')); }}>x</button>
-      <button className="dot symbols" type="button" onClick={() => { handleStateChange(calculate(object, '.')); }}>.</button>
-      <button className="equal symbols" type="button" onClick={() => { handleStateChange(calculate(object, '=')); }}>=</button>
+      <button className={`${style.number0} ${style.numbers}`} type="button" onClick={() => { handleStateChange(calculate(object, '0')); }}>0</button>
+      <button className={`${style.number1} ${style.numbers}`} type="button" onClick={() => { handleStateChange(calculate(object, '1')); }}>1</button>
+      <button className={`${style.number2} ${style.numbers}`} type="button" onClick={() => { handleStateChange(calculate(object, '2')); }}>2</button>
+      <button className={`${style.number3} ${style.numbers}`} type="button" onClick={() => { handleStateChange(calculate(object, '3')); }}>3</button>
+      <button className={`${style.number4} ${style.numbers}`} type="button" onClick={() => { handleStateChange(calculate(object, '4')); }}>4</button>
+      <button className={`${style.number5} ${style.numbers}`} type="button" onClick={() => { handleStateChange(calculate(object, '5')); }}>5</button>
+      <button className={`${style.number6} ${style.numbers}`} type="button" onClick={() => { handleStateChange(calculate(object, '6')); }}>6</button>
+      <button className={`${style.number7} ${style.numbers}`} type="button" onClick={() => { handleStateChange(calculate(object, '7')); }}>7</button>
+      <button className={`${style.number8} ${style.numbers}`} type="button" onClick={() => { handleStateChange(calculate(object, '8')); }}>8</button>
+      <button className={`${style.number9} ${style.numbers}`} type="button" onClick={() => { handleStateChange(calculate(object, '9')); }}>9</button>
+      <button className={`${style.buttonAc} ${style.symbols}`} type="button" onClick={() => { handleStateChange(calculate(object, 'AC')); }}>AC</button>
+      <button className={`${style.plusminus} ${style.symbols}`} type="button" onClick={() => { handleStateChange(calculate(object, '+/-')); }}>+/-</button>
+      <button className={`${style.percentage} ${style.symbols}`} type="button" onClick={() => { handleStateChange(calculate(object, '%')); }}>%</button>
+      <button className={`${style.plus} ${style.symbols}`} type="button" onClick={() => { handleStateChange(calculate(object, '+')); }}>+</button>
+      <button className={`${style.minus} ${style.symbols}`} type="button" onClick={() => { handleStateChange(calculate(object, '-')); }}>-</button>
+      <button className={`${style.divide} ${style.symbols}`} type="button" onClick={() => { handleStateChange(calculate(object, '÷')); }}>÷</button>
+      <button className={`${style.multiply} ${style.symbols}`} type="button" onClick={() => { handleStateChange(calculate(object, 'x')); }}>x</button>
+      <button className={`${style.dot} ${style.symbols}`} type="button" onClick={() => { handleStateChange(calculate(object, '.')); }}>.</button>
+      <button className={`${style.equal} ${style.symbols}`} type="button" onClick={() => { handleStateChange(calculate(object, '=')); }}>=</button>
     </div>
   );
 };
