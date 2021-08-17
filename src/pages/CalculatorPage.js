@@ -1,6 +1,7 @@
+/* eslint-disable import/extensions */
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import Calculator from '../components/Calculator';
+import Calculator from '../components/Calculator.js';
 import style from './CalculatorPage.module.css';
 
 const CalculatorPage = () => (
