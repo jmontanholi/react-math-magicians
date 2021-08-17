@@ -1,0 +1,17 @@
+.div {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+
+.title {
+  font-size: 35px;
+}
+
+.text {
+  font-size: 25px;
+}

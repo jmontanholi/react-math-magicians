@@ -1,0 +1,33 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px 0 10px;
+  background-color: rgba(0, 0, 0, 0.432);
+}
+
+.linksDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px 0 5px 0;
+}
+
+.link2 {
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  padding: 5px 20px 5px 20px;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+}
