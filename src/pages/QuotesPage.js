@@ -3,7 +3,7 @@ import style from './QuotesPage.module.css';
 
 const QuotesPage = () => {
   const [quote, setQuote] = useState('Pure mathematics is, in its way, the poetry of logical ideas.');
-  const [author, setAuthor] = useState('— Albert Einstein, German theoretical physicist');
+  const [author, setAuthor] = useState('Albert Einstein, German theoretical physicist');
   const changeQuote = async () => {
     const response = await fetch('https://random-math-quote-api.herokuapp.com');
     const result = await response.json();
