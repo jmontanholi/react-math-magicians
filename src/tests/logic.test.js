@@ -155,5 +155,80 @@ describe('Calculate', () => {
 
       expect(result).toStrictEqual({ next: '0.' });
     });
+
+    test('Returns empty object if total value has a dot', () => {
+      const object = {
+        total: '.',
+        next: '',
+        operation: '',
+      };
+
+      const result = calculate(object, '.');
+
+      expect(result).toStrictEqual({});
+    });
+
+    test('Returns total with a dot if total has no a decimal point', () => {
+      const object = {
+        total: '5',
+        next: '',
+        operation: '',
+      };
+
+      const result = calculate(object, '.');
+
+      expect(result).toStrictEqual({ total: '5.' });
+    });
+
+    test('Returns total with 0 and a dot if total is empty', () => {
+      const object = {
+        total: '',
+        next: '',
+        operation: '',
+      };
+
+      const result = calculate(object, '.');
+
+      expect(result).toStrictEqual({ total: '0.' });
+    });
+  });
+
+  describe('Equal operator', () => {
+    it('If you have valid key values return an object with the result', () => {
+      const object = {
+        total: '5',
+        next: '5',
+        operation: '+',
+      };
+
+      const result = calculate(object, '=');
+
+      expect(result).toStrictEqual({ total: '10', next: null, operation: null });
+    });
+
+    it("If don't have valid key values return an empty object", () => {
+      const object = {
+        total: '',
+        next: '',
+        operation: '',
+      };
+
+      const result = calculate(object, '=');
+
+      expect(result).toStrictEqual({});
+    });
+  });
+
+  describe('Plus minus operator', () => {
+    it('description', () => {
+      const object = {
+        total: '',
+        next: '5',
+        operation: '',
+      };
+
+      const result = calculate(object, '+/-');
+      expect(result).toStrictEqual({ next: '-5' });
+    });
   });
 });
