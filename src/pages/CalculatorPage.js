@@ -6,7 +6,7 @@ import style from './CalculatorPage.module.css';
 const CalculatorPage = () => (
   <div className={style.div}>
     <div className={style.titleDiv}>
-      <h2 className={style.title}>
+      <h2 data-testid="mathTitle" className={style.title}>
         Let's do some Math
       </h2>
     </div>

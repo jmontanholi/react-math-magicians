@@ -3,7 +3,7 @@ import style from './HomePage.module.css';
 
 const HomePage = () => (
   <div className={style.div}>
-    <h2 className={style.title}>
+    <h2 data-testid="homeTitle" className={style.title}>
       Welcome To Our Page!
     </h2>
     <p className={style.text}>

@@ -10,9 +10,9 @@ const NavBar = () => (
       </h1>
     </div>
     <div className={style.linksDiv}>
-      <Link className={style.link} to="/">Home</Link>
-      <Link className={`${style.link} ${style.link2}`} to="/calculator">Calculator</Link>
-      <Link className={style.link} to="/quote">Quote</Link>
+      <Link data-testid="linkHome" className={style.link} to="/">Home</Link>
+      <Link data-testid="linkCalc" className={`${style.link} ${style.link2}`} to="/calculator">Calculator</Link>
+      <Link data-testid="linkQuote" className={style.link} to="/quote">Quote</Link>
     </div>
   </nav>
 );
