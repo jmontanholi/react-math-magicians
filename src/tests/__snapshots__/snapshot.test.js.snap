@@ -1,0 +1,217 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator Renders the CalculatorPage 1`] = `
+<div
+  className="div"
+>
+  <div
+    className="titleDiv"
+  >
+    <h2
+      className="title"
+      data-testid="mathTitle"
+    >
+      Let's do some Math
+    </h2>
+  </div>
+  <div
+    className="calculatorDiv"
+  >
+    <div
+      className="calculator"
+    >
+      <div
+        className="resultShow"
+        data-testid="display"
+      >
+        <p
+          className="resultNumber"
+        >
+          
+           
+          
+           
+          
+        </p>
+      </div>
+      <button
+        className="number0 numbers"
+        onClick={[Function]}
+        type="button"
+      >
+        0
+      </button>
+      <button
+        className="number1 numbers"
+        onClick={[Function]}
+        type="button"
+      >
+        1
+      </button>
+      <button
+        className="number2 numbers"
+        onClick={[Function]}
+        type="button"
+      >
+        2
+      </button>
+      <button
+        className="number3 numbers"
+        onClick={[Function]}
+        type="button"
+      >
+        3
+      </button>
+      <button
+        className="number4 numbers"
+        onClick={[Function]}
+        type="button"
+      >
+        4
+      </button>
+      <button
+        className="number5 numbers"
+        onClick={[Function]}
+        type="button"
+      >
+        5
+      </button>
+      <button
+        className="number6 numbers"
+        onClick={[Function]}
+        type="button"
+      >
+        6
+      </button>
+      <button
+        className="number7 numbers"
+        onClick={[Function]}
+        type="button"
+      >
+        7
+      </button>
+      <button
+        className="number8 numbers"
+        onClick={[Function]}
+        type="button"
+      >
+        8
+      </button>
+      <button
+        className="number9 numbers"
+        onClick={[Function]}
+        type="button"
+      >
+        9
+      </button>
+      <button
+        className="buttonAc symbols"
+        onClick={[Function]}
+        type="button"
+      >
+        AC
+      </button>
+      <button
+        className="plusminus symbols"
+        onClick={[Function]}
+        type="button"
+      >
+        +/-
+      </button>
+      <button
+        className="percentage symbols"
+        onClick={[Function]}
+        type="button"
+      >
+        %
+      </button>
+      <button
+        className="plus symbols"
+        onClick={[Function]}
+        type="button"
+      >
+        +
+      </button>
+      <button
+        className="minus symbols"
+        onClick={[Function]}
+        type="button"
+      >
+        -
+      </button>
+      <button
+        className="divide symbols"
+        onClick={[Function]}
+        type="button"
+      >
+        ÷
+      </button>
+      <button
+        className="multiply symbols"
+        onClick={[Function]}
+        type="button"
+      >
+        x
+      </button>
+      <button
+        className="dot symbols"
+        onClick={[Function]}
+        type="button"
+      >
+        .
+      </button>
+      <button
+        className="equal symbols"
+        onClick={[Function]}
+        type="button"
+      >
+        =
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`NavBar Renders the NavBar 1`] = `
+<nav
+  className="nav"
+>
+  <div
+    className="titleDiv"
+  >
+    <h1
+      className="title"
+    >
+      Math Magicians
+    </h1>
+  </div>
+  <div
+    className="linksDiv"
+  >
+    <a
+      className="link"
+      data-testid="linkHome"
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      className="link link2"
+      data-testid="linkCalc"
+      href="/calculator"
+      onClick={[Function]}
+    >
+      Calculator
+    </a>
+    <a
+      className="link"
+      data-testid="linkQuote"
+      href="/quote"
+      onClick={[Function]}
+    >
+      Quote
+    </a>
+  </div>
+</nav>
+`;
