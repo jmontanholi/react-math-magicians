@@ -6,7 +6,6 @@ import {
   Route,
 } from 'react-router-dom';
 import './App.css';
-import NavBar from './components/NavBar';
 import CalculatorPage from './pages/CalculatorPage';
 import QuotesPage from './pages/QuotesPage';
 import HomePage from './pages/HomePage';
@@ -16,7 +15,6 @@ class App extends React.Component {
     return (
       <div className="appDiv">
         <Router>
-          <NavBar />
           <Switch>
             <Route path="/calculator">
               <CalculatorPage />
