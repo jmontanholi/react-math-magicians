@@ -40,12 +40,22 @@ You will need the following:
 
 ## Authors
 
+👤 **Arturo Alvarez**
+- Github: [@StarSheriff2](https://github.com/StarSheriff2)
+- Twitter: [@ArturoAlvarezV](https://twitter.com/ArturoAlvarezV)
+- Linkedin: [Arturo Alvarez](https://www.linkedin.com/in/arturoalvarezv/)
+
 👤 **João Vítor Montanholi Nunes**
 
 - GitHub: [jmontanholi](https://github.com/jmontanholi)
 - Twitter: [MontanholiNunes](https://twitter.com/MontanholiNunes)
 - LinkedIn: [Joao vitor montanholi](https://www.linkedin.com/in/joaovitormontanholi/)
 
+👤 **Juan Carlos Hernandez**
+
+- GitHub: [Juan Carlos Hernandez](https://github.com/jchernandez87)
+- Twitter: [Twitter](https://twitter.com/Juancar70771241)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/juan-carlos-hernandez-200a05175)
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!

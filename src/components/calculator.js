@@ -27,7 +27,7 @@ const Calculator = () => {
 
   return (
     <div className={style.calculator}>
-      <div className={style.resultShow}>
+      <div data-testid="display" className={style.resultShow}>
         <p className={style.resultNumber}>
           { total }
           { ' ' }

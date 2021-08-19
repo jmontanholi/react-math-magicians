@@ -14,6 +14,9 @@ const QuotesPage = () => {
 
   return (
     <div className={style.div}>
+      <h2 data-testid="quoteTitle">
+        Quote of the day:
+      </h2>
       <h2>
         <p className={style.quote}>
           { quote }
