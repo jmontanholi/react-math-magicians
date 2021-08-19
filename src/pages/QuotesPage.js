@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import style from './QuotesPage.module.css';
+import NavBar from '../components/NavBar';
 
 const QuotesPage = () => {
   const [quote, setQuote] = useState('Pure mathematics is, in its way, the poetry of logical ideas.');
@@ -13,21 +14,24 @@ const QuotesPage = () => {
   };
 
   return (
-    <div className={style.div}>
-      <h2 data-testid="quoteTitle">
-        Quote of the day:
-      </h2>
-      <h2>
-        <p className={style.quote}>
-          { quote }
-        </p>
-        <p>
-          -
-          {' '}
-          {author}
-        </p>
-      </h2>
-      <button className={style.button} type="button" onClick={() => { changeQuote(); }}>New Quote</button>
+    <div>
+      <NavBar />
+      <div className={style.div}>
+        <h2 data-testid="quoteTitle">
+          Quote of the day:
+        </h2>
+        <h2>
+          <p className={style.quote}>
+            { quote }
+          </p>
+          <p>
+            -
+            {' '}
+            {author}
+          </p>
+        </h2>
+        <button className={style.button} type="button" onClick={() => { changeQuote(); }}>New Quote</button>
+      </div>
     </div>
   );
 };
