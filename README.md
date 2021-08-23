@@ -17,7 +17,7 @@ This project's goal is to teach how to create an App with React and use the conc
 
 ## Live demo
 
-- [Heroku](https://dashboard.heroku.com/apps/immense-lowlands-40644)
+- [Heroku](https://immense-lowlands-40644.herokuapp.com)
 - [Netlify](https://sleepy-albattani-2ea0d0.netlify.app)
 
 ## Getting Started
