@@ -15,6 +15,11 @@ This project's goal is to teach how to create an App with React and use the conc
 - Git & Github
 - Npm
 
+## Live demo
+
+- [Heroku](https://dashboard.heroku.com/apps/immense-lowlands-40644)
+- [Netlify](https://sleepy-albattani-2ea0d0.netlify.app)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
